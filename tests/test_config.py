@@ -4,18 +4,18 @@ import unittest
 from configparser import ConfigParser
 from unittest.mock import patch
 
-from psa_car_controller.common.mylogger import my_logger
+from psa_car_controller_fix.common.mylogger import my_logger
 
-from psa_car_controller.psacc.repository.config_repository import ConfigRepository
+from psa_car_controller_fix.psacc.repository.config_repository import ConfigRepository
 
 
 class TestUnit(unittest.TestCase):
     def test_read_config(self):
-        from psa_car_controller.psacc.repository.config_repository import ConfigRepository
+        from psa_car_controller_fix.psacc.repository.config_repository import ConfigRepository
         ConfigRepository.read_config()
 
-    @patch("psa_car_controller.psacc.repository.config_repository.ConfigRepository._write")
-    @patch("psa_car_controller.psacc.repository.config_repository.ConfigRepository._read_file")
+    @patch("psa_car_controller_fix.psacc.repository.config_repository.ConfigRepository._write")
+    @patch("psa_car_controller_fix.psacc.repository.config_repository.ConfigRepository._read_file")
     def test_read_old_config(self, mock_read, mock_write):
         old_config_str = """[General]
 currency = €
@@ -39,16 +39,16 @@ night hour end = 4h42
         conf.json()
 
     def test_read_non_existent_config(self):
-        from psa_car_controller.psacc.repository.config_repository import ConfigRepository
+        from psa_car_controller_fix.psacc.repository.config_repository import ConfigRepository
         self.assertRaises(FileNotFoundError, lambda: ConfigRepository._read_file("nonexistent.ini"))
 
     def test_read_config_non_existent_config(self):
-        from psa_car_controller.psacc.repository.config_repository import ConfigRepository
+        from psa_car_controller_fix.psacc.repository.config_repository import ConfigRepository
         result = ConfigRepository.read_config("nonexistent.ini")
         expected_result = ConfigRepository.config_file_to_dto(ConfigRepository.get_default_config())
         self.assertEqual(result, expected_result)
 
-    @patch("psa_car_controller.psacc.repository.config_repository.ConfigRepository._write")
+    @patch("psa_car_controller_fix.psacc.repository.config_repository.ConfigRepository._write")
     def test_read_invalid_hour(self, mock_write):
         conf = ConfigRepository.config_file_to_dto(ConfigRepository.get_default_config())
         conf.Electricity_config.night_hour_start = "200"

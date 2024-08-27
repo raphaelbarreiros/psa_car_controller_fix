@@ -1,15 +1,15 @@
 from unittest.mock import MagicMock, patch
 
-from psa_car_controller.psa.connected_car_api import Vehicles, ApiClient
-from psa_car_controller.psa.constants import DISCONNECTED
-from psa_car_controller.psacc.model.car import Car
+from psa_car_controller_fix.psa.connected_car_api import Vehicles, ApiClient
+from psa_car_controller_fix.psa.constants import DISCONNECTED
+from psa_car_controller_fix.psacc.model.car import Car
 from tests.data.car_status import ELECTRIC_CAR_STATUS
 
 import unittest
 
 from paho.mqtt.client import MQTTMessage
 
-from psa_car_controller.psa.RemoteClient import MQTT_EVENT_TOPIC
+from psa_car_controller_fix.psa.RemoteClient import MQTT_EVENT_TOPIC
 from tests.utils import get_rc
 
 message_without_precond = b'{"date":"2022-03-30T12:00:52Z","etat_res_elec":0,"precond_state":{},"charging_state":{"program":{' \

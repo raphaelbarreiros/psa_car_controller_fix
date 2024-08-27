@@ -25,11 +25,11 @@ jobs:
          poetry version ${PSACC_VERSION}
          poetry build
          poetry publish --username __token__ --password ${{ secrets.PYPI_TOKEN }}
-         mv dist/psa_car_controller-${PSACC_VERSION:1}-py3-none-any.whl dist/psa_car_controller-0.0.0-py3-none-any.whl
+         mv dist/psa_car_controller_fix-${PSACC_VERSION:1}-py3-none-any.whl dist/psa_car_controller_fix-0.0.0-py3-none-any.whl
      - uses: actions/upload-artifact@master
        with:
          name: wheel-package
-         path: dist/psa_car_controller-0.0.0-py3-none-any.whl
+         path: dist/psa_car_controller_fix-0.0.0-py3-none-any.whl
   push_to_registry:
     needs: create_release
     name: Push Docker image to Docker Hub
@@ -38,7 +38,7 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          DOCKER_IMAGE=flobz/psa_car_controller
+          DOCKER_IMAGE=raphaelbarreiros/psa_car_controller_fix
           VERSION=edge
           if [[ $GITHUB_REF == refs/tags/* ]]; then
             VERSION=${GITHUB_REF#refs/tags/}
@@ -61,7 +61,7 @@ jobs:
       - uses: actions/download-artifact@master
         with:
           name: wheel-package
-          path: dist/psa_car_controller-0.0.0-py3-none-any.whl
+          path: dist/psa_car_controller_fix-0.0.0-py3-none-any.whl
       - name: Login to DockerHub
         uses: docker/login-action@v1 
         with:

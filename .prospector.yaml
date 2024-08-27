@@ -5,7 +5,7 @@ uses:
     - flask
 ignore-paths:
   - tests
-  - psa_car_controller/psa/connected_car_api
+  - psa_car_controller_fix/psa/connected_car_api
 pycodestyle:
   disable:
     - E722

@@ -1,7 +1,7 @@
 # Remote Control of PSA car
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4b4b98fe6dc04956a1c9a07b97c46c06)](https://app.codacy.com/gh/flobz/psa_car_controller?utm_source=github.com&utm_medium=referral&utm_content=flobz/psa_car_controller&utm_campaign=Badge_Grade_Settings)
-[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/f4082f146ad044bb900e1683035a540b)](https://www.codacy.com/gh/flobz/psa_car_controller/dashboard?utm_source=github.com&utm_medium=referral&utm_content=flobz/psa_car_controller&utm_campaign=Badge_Coverage)
-[![Publish Docker image](https://github.com/flobz/psa_car_controller/actions/workflows/Docker_build.yml/badge.svg?branch=master)](https://hub.docker.com/repository/docker/flobz/psa_car_controller)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4b4b98fe6dc04956a1c9a07b97c46c06)](https://app.codacy.com/gh/raphaelbarreiros/psa_car_controller_fix?utm_source=github.com&utm_medium=referral&utm_content=raphaelbarreiros/psa_car_controller_fix&utm_campaign=Badge_Grade_Settings)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/f4082f146ad044bb900e1683035a540b)](https://www.codacy.com/gh/raphaelbarreiros/psa_car_controller_fix/dashboard?utm_source=github.com&utm_medium=referral&utm_content=raphaelbarreiros/psa_car_controller_fix&utm_campaign=Badge_Coverage)
+[![Publish Docker image](https://github.com/raphaelbarreiros/psa_car_controller_fix/actions/workflows/Docker_build.yml/badge.svg?branch=master)](https://hub.docker.com/repository/docker/raphaelbarreiros/psa_car_controller_fix)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/donate?hosted_button_id=SM652WPXFNCXS)
 ### This is a Python program to control and get information from a PSA car.
 I test it with a Peugeot e-208, but it works with other PSA vehicles (Citroen, Opel, Vauxhall, DS).
@@ -28,7 +28,7 @@ The official API is documented [here](https://developer.groupe-psa.io/webapi/b2c
 
  ## I. Installation
 - [Installation on Linux or Windows](docs/Install.md)
-- [Installation as Home Assistant addon](https://github.com/flobz/psacc-ha/blob/main/psacc-ha/README.md)  
+- [Installation as Home Assistant addon](https://github.com/raphaelbarreiros/psacc-ha/blob/main/psacc-ha/README.md)  
 - [Installation in Docker](docs/Docker.md)
 - [Installation on Raspberry Pi with docker-compose (external Tutorial)](https://return2.net/opel-peugeot-electric-vehicle-set-charging-threshold-limit/)
  ## II. Use the API
@@ -63,7 +63,7 @@ You can modify a price manually in the dashboard. It can be useful if you use pu
 - [HomeAssistant](https://github.com/Flodu31/HomeAssistant-PeugeotIntegration)
 - Jeedom (Anyone can share the procedure ?)
 - You can send live car status to ABRP (A better Route Planner), see [this page](docs/abrp.md)
-- [Grafana](https://github.com/flobz/psa_car_controller/issues/161)
+- [Grafana](https://github.com/raphaelbarreiros/psa_car_controller_fix/issues/161)
 
 ## FAQ
 If you have a problem or a question, please check if the answer isn't already in the [FAQ](FAQ.md). 

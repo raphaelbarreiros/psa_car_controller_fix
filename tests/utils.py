@@ -7,11 +7,11 @@ from unittest.mock import MagicMock
 import pytz
 from deepdiff import DeepDiff
 
-from psa_car_controller.psa.RemoteClient import RemoteClient
-from psa_car_controller.psa.connected_car_api import Vehicles
-from psa_car_controller.psacc.application.charging import Charging
-from psa_car_controller.psacc.model.car import Cars, Car
-from psa_car_controller.psacc.repository.db import Database
+from psa_car_controller_fix.psa.RemoteClient import RemoteClient
+from psa_car_controller_fix.psa.connected_car_api import Vehicles
+from psa_car_controller_fix.psacc.application.charging import Charging
+from psa_car_controller_fix.psacc.model.car import Cars, Car
+from psa_car_controller_fix.psacc.repository.db import Database
 
 DATA_DIR = os.path.dirname(os.path.realpath(__file__)) + "/data/"
 latitude = 47.2183

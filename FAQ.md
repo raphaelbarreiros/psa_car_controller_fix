@@ -4,7 +4,7 @@
 The car model need to be known by the app. To find it, the app use the first 10 character of your VIN.
 If the car isn't in the list we need to add it, to do that you need to edit the file here:
 
-Go to [car_models.yml](https://github.com/flobz/psa_car_controller/blob/master/psa_car_controller/psacc/resources/car_models.yml)
+Go to [car_models.yml](https://github.com/raphaelbarreiros/psa_car_controller_fix/blob/master/psa_car_controller_fix/psacc/resources/car_models.yml)
 and click on edit then copy cut an already existent model in the list and edit all properties that are incorrect for your model:
 - Model
 - First ten letter of the car VIN:  
@@ -20,7 +20,7 @@ Your psa account is locked because you makes 20 sms activation. To unlock do thi
 2. If the application is already installed uninstall and reinstall
 3. You should be asked to give your credentials
 4. Connect and test remote control, it should say that you need to reset your account
-6. If the remote control work on your smartphone it will work with psa_car_controller
+6. If the remote control work on your smartphone it will work with psa_car_controller_fix
 
 ### 3. No data in dashboard
 The app record your position and other information if "-r" argument is provided and if data are fetched.
@@ -52,7 +52,7 @@ If you have an error more or less like this one:
 [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1056)
 ```
 It's a problem on PSA server so don't open an issue, you can retry a second time and if it still doesn't work you just have to wait.
-You can look to issue about this problem [here](https://github.com/flobz/psa_car_controller/search?q=ssl&type=issues).
+You can look to issue about this problem [here](https://github.com/raphaelbarreiros/psa_car_controller_fix/search?q=ssl&type=issues).
 
 ### 7. AttributeError: 'PSACarController' object has no attribute 'chc'
 The setup phase did't worked. Please retry the "user config" and "otp config".
@@ -65,7 +65,7 @@ One of the following parameter is incorrect:
 ### 9. NEED_AUTHORIZATION error:
 Don't open an issue, possible fix:
 - wait for next day
-- https://github.com/flobz/psa_car_controller/issues/395#issuecomment-1690043727
-- https://github.com/flobz/psa_car_controller/issues/576#issuecomment-1631962500
+- https://github.com/raphaelbarreiros/psa_car_controller_fix/issues/395#issuecomment-1690043727
+- https://github.com/raphaelbarreiros/psa_car_controller_fix/issues/576#issuecomment-1631962500
 ### 10. No car position:
-Look at this solution: https://github.com/flobz/psa_car_controller/issues/714#issuecomment-1868959995
+Look at this solution: https://github.com/raphaelbarreiros/psa_car_controller_fix/issues/714#issuecomment-1868959995

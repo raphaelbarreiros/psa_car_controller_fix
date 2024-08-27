@@ -25,7 +25,7 @@ def get_oauth_config_layout(redirect_url):
                 "5. Find in the network tab: xxxx://oauth2redirect....?code=<copy this part>&scope=openid... ",
                 html.Br(),
                 html.A("You can find more info here",
-                       href="https://github.com/flobz/psa_car_controller/discussions/779"), html.Br()]
+                       href="https://github.com/raphaelbarreiros/psa_car_controller/discussions/779"), html.Br()]
             )),
             dbc.Form([
                 html.Div([

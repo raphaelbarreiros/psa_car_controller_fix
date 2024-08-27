@@ -11,30 +11,30 @@ from dateutil.tz import tzutc
 from greenery.lego import parse, charclass
 from pytz import UTC
 
-from psa_car_controller import psa
-from psa_car_controller.common import utils
-from psa_car_controller.common.mylogger import my_logger
+from psa_car_controller_fix import psa
+from psa_car_controller_fix.common import utils
+from psa_car_controller_fix.common.mylogger import my_logger
 
-from psa_car_controller.common.utils import parse_hour, RateLimitException, rate_limit
-from psa_car_controller.psa.otp.otp import load_otp, save_otp
-from psa_car_controller.psa.setup.app_decoder import get_content_from_apk, GITHUB_USER, GITHUB_REPO
-from psa_car_controller.psa.setup.github import github_file_need_to_be_downloaded
-from psa_car_controller.psa.connected_car_api import ApiClient
-from psa_car_controller.psacc.application.charge_control import ChargeControls
-from psa_car_controller.psacc.application.charging import Charging
-from psa_car_controller.psacc.application.ecomix import Ecomix
-from psa_car_controller.psacc.application.psa_client import PSAClient
-from psa_car_controller.psacc.model.car import Car, Cars
-from psa_car_controller.psacc.repository import config_repository
-from psa_car_controller.psacc.repository.car_model import CarModelRepository
-from psa_car_controller.psacc.repository.config_repository import ConfigRepository
-from psa_car_controller.psacc.repository.db import Database
-from psa_car_controller.psacc.repository.trips import Trips
-from psa_car_controller.psacc.utils.utils import get_temp
+from psa_car_controller_fix.common.utils import parse_hour, RateLimitException, rate_limit
+from psa_car_controller_fix.psa.otp.otp import load_otp, save_otp
+from psa_car_controller_fix.psa.setup.app_decoder import get_content_from_apk, GITHUB_USER, GITHUB_REPO
+from psa_car_controller_fix.psa.setup.github import github_file_need_to_be_downloaded
+from psa_car_controller_fix.psa.connected_car_api import ApiClient
+from psa_car_controller_fix.psacc.application.charge_control import ChargeControls
+from psa_car_controller_fix.psacc.application.charging import Charging
+from psa_car_controller_fix.psacc.application.ecomix import Ecomix
+from psa_car_controller_fix.psacc.application.psa_client import PSAClient
+from psa_car_controller_fix.psacc.model.car import Car, Cars
+from psa_car_controller_fix.psacc.repository import config_repository
+from psa_car_controller_fix.psacc.repository.car_model import CarModelRepository
+from psa_car_controller_fix.psacc.repository.config_repository import ConfigRepository
+from psa_car_controller_fix.psacc.repository.db import Database
+from psa_car_controller_fix.psacc.repository.trips import Trips
+from psa_car_controller_fix.psacc.utils.utils import get_temp
 from tests.data.car_status import FUEL_CAR_STATUS, ELECTRIC_CAR_STATUS, ELECTRIC_CAR_STATUS_V2
 from tests.utils import DATA_DIR, record_position, latitude, longitude, date0, date1, date2, date3, record_charging, \
     vehicule_list, get_new_test_db, get_date, date4, compare_dict, duration_min, duration_str
-from psa_car_controller.web.figures import get_figures, get_battery_curve_fig, get_altitude_fig
+from psa_car_controller_fix.web.figures import get_figures, get_battery_curve_fig, get_altitude_fig
 
 dummy_value = 0
 
@@ -143,7 +143,7 @@ class TestUnit(unittest.TestCase):
         # electric should be first
         assert car.status.energy[0].type == 'Electric'
 
-    @patch("psa_car_controller.psacc.repository.db.Database.record_position")
+    @patch("psa_car_controller_fix.psacc.repository.db.Database.record_position")
     def test_electric_record_info(self, mock_db):
         api = ApiClient()
         status: psa.connected_car_api.models.status.Status = api._ApiClient__deserialize(ELECTRIC_CAR_STATUS, "Status")
@@ -160,8 +160,8 @@ class TestUnit(unittest.TestCase):
                            True)
         self.assertEqual(db_record_position_arg, expected_result)
 
-    @patch("psa_car_controller.psacc.repository.db.Database.record_battery_soh")
-    @patch("psa_car_controller.psacc.repository.db.Database.record_position")
+    @patch("psa_car_controller_fix.psacc.repository.db.Database.record_battery_soh")
+    @patch("psa_car_controller_fix.psacc.repository.db.Database.record_position")
     def test_electric_record_info_v2(self, mock_db, moock_soh):
         api = ApiClient()
         status: psa.connected_car_api.models.status.Status = api._ApiClient__deserialize(

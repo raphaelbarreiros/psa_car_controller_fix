@@ -3,9 +3,9 @@ import unittest
 import datetime
 from time import sleep
 
-from psa_car_controller.common.mylogger import my_logger
-from psa_car_controller.psa.constants import INPROGRESS, STOPPED
-from psa_car_controller.psacc.application.charge_control import ChargeControl
+from psa_car_controller_fix.common.mylogger import my_logger
+from psa_car_controller_fix.psa.constants import INPROGRESS, STOPPED
+from psa_car_controller_fix.psacc.application.charge_control import ChargeControl
 
 # This simulates a 70 % charge limit with the scheduled charge time set to currentTime + 2 minutes. The initial fake
 # status is "75 % and charging InProgress". First, ChargeControl should stop the charge.

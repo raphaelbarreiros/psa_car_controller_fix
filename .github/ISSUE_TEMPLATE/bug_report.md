@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 <!-- 
- Make sure the issue is not in the FAQ: https://github.com/flobz/psa_car_controller/blob/master/FAQ.md
+ Make sure the issue is not in the FAQ: https://github.com/raphaelbarreiros/psa_car_controller_fix/blob/master/FAQ.md
 -->
 **Describe the bug**
 A clear and concise description of what the bug is.

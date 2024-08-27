@@ -7,7 +7,7 @@
 ABRP will optimize your itinerary with these parameters.
 
 ### Prerequisite
-1. A working last version of psa_car_controller
+1. A working last version of psa_car_controller_fix
 2. A abetterrouteplanner account
 3. Make sure that you don't have a "Can't get car model error" if so look at the [FAQ](../FAQ.md)
 
@@ -29,11 +29,11 @@ http://localhost:5000/abrp?token=YOURTOKEN
     
     11.1 Get the name from this list : [model list](https://api.iternio.com/1/tlm/get_carmodels_list?api_key=32b2162f-9599-4647-8139-66e9f9528370)
     
-    11.2 stop the psa_car_controller 
+    11.2 stop the psa_car_controller_fix 
     
     11.3 replace null with the correct name 
     
     11.4 save the file 
     
-    11.5 restart psa_car_controller
+    11.5 restart psa_car_controller_fix
 12. Enjoy

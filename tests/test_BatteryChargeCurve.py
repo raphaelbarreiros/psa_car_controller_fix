@@ -1,9 +1,9 @@
 import unittest
 
-from psa_car_controller.psacc.application.battery_charge_curve import BatteryChargeCurve
-from psa_car_controller.psacc.model.battery_curve import BatteryCurveDto
-from psa_car_controller.psacc.model.car import Car
-from psa_car_controller.psacc.model.charge import Charge
+from psa_car_controller_fix.psacc.application.battery_charge_curve import BatteryChargeCurve
+from psa_car_controller_fix.psacc.model.battery_curve import BatteryCurveDto
+from psa_car_controller_fix.psacc.model.car import Car
+from psa_car_controller_fix.psacc.model.charge import Charge
 from tests.utils import date0, date1, date2
 
 vin1 = "VRAAAAAAA"

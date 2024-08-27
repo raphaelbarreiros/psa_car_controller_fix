@@ -1,8 +1,8 @@
 import unittest
 from sqlite3.dbapi2 import IntegrityError
 
-from psa_car_controller.psacc.model.battery_soh import BatterySoh
-from psa_car_controller.psacc.repository.db import Database
+from psa_car_controller_fix.psacc.model.battery_soh import BatterySoh
+from psa_car_controller_fix.psacc.repository.db import Database
 from tests.utils import get_new_test_db, compare_dict, get_date, vehicule_list
 
 

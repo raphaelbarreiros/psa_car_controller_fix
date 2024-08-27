@@ -49,7 +49,7 @@ def get_default_car() -> Car:
 
 def add_header(el):
     version = "v" + __version__
-    github_url = "https://github.com/flobz/psa_car_controller/releases/tag/" + version
+    github_url = "https://github.com/raphaelbarreiros/psa_car_controller/releases/tag/" + version
     dbc_version = dbc.Button(html.I(version, className="m-1"),
                              size='sm',
                              color="secondary",
