@@ -1,14 +1,14 @@
 import logging
 
-from psa_car_controller.psa.connected_car_api import Battery
-from psa_car_controller.psa.connected_car_api.models.energy import Energy
-from psa_car_controller.psa.connected_car_api.models.energy_charging import EnergyCharging
-from psa_car_controller.psa.connected_car_api.models.geometry import Geometry
-from psa_car_controller.psa.connected_car_api.models.kinetic import Kinetic
-from psa_car_controller.psa.connected_car_api.models.position import Position
-from psa_car_controller.psa.connected_car_api.models.position_properties import PositionProperties
-from psa_car_controller.psa.connected_car_api.models.status import Status
-from psa_car_controller.psa.connected_car_api.models.vehicle_odometer import VehicleOdometer
+from psa_car_controller_fix.psa.connected_car_api import Battery
+from psa_car_controller_fix.psa.connected_car_api.models.energy import Energy
+from psa_car_controller_fix.psa.connected_car_api.models.energy_charging import EnergyCharging
+from psa_car_controller_fix.psa.connected_car_api.models.geometry import Geometry
+from psa_car_controller_fix.psa.connected_car_api.models.kinetic import Kinetic
+from psa_car_controller_fix.psa.connected_car_api.models.position import Position
+from psa_car_controller_fix.psa.connected_car_api.models.position_properties import PositionProperties
+from psa_car_controller_fix.psa.connected_car_api.models.status import Status
+from psa_car_controller_fix.psa.connected_car_api.models.vehicle_odometer import VehicleOdometer
 
 logger = logging.getLogger(__name__)
 

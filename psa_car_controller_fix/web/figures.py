@@ -8,13 +8,13 @@ import plotly.graph_objects as go
 from dash.dash_table.Format import Scheme, Symbol, Group, Format
 from dash.dcc import Graph
 
-from psa_car_controller.psacc.application.charging import Charging
-from psa_car_controller.psacc.model.car import Car
-from psa_car_controller.psacc.repository.trips import Trip
-from psa_car_controller.psacc.repository.db import Database
+from psa_car_controller_fix.psacc.application.charging import Charging
+from psa_car_controller_fix.psacc.model.car import Car
+from psa_car_controller_fix.psacc.repository.trips import Trip
+from psa_car_controller_fix.psacc.repository.db import Database
 
 # pylint: disable=invalid-name
-from psa_car_controller.web.tools.utils import card_value_div, dash_date_to_datetime
+from psa_car_controller_fix.web.tools.utils import card_value_div, dash_date_to_datetime
 
 ERROR_DIV = dbc.Alert("No data to show, there is probably no trips recorded yet", color="danger")
 PADDING_TOP = {"padding-top": "1em"}

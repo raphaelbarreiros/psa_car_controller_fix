@@ -3,7 +3,7 @@ from dash import html
 from dash._utils import create_callback_id
 from dash.dependencies import Output, Input
 
-from psa_car_controller.web.app import dash_app
+from psa_car_controller_fix.web.app import dash_app
 
 RESPONSE = "-response"
 

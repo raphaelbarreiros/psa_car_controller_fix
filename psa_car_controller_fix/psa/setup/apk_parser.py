@@ -7,7 +7,7 @@ from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.serialization import pkcs12
 
-from psa_car_controller.psa.constants import BRAND
+from psa_car_controller_fix.psa.constants import BRAND
 
 logging.getLogger("androguard").setLevel(logging.ERROR)
 

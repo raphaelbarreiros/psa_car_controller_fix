@@ -2,7 +2,7 @@ import json
 from datetime import datetime, timedelta
 from uuid import uuid4
 
-from psa_car_controller.psa.constants import PSA_DATE_FORMAT, PSA_CORRELATION_DATE_FORMAT
+from psa_car_controller_fix.psa.constants import PSA_DATE_FORMAT, PSA_CORRELATION_DATE_FORMAT
 
 MQTT_REQ_TOPIC = "psa/RemoteServices/from/cid/"
 

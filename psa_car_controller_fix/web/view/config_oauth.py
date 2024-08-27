@@ -4,11 +4,11 @@ from dash import callback_context, html, dcc
 from dash.exceptions import PreventUpdate
 from flask import request
 
-from psa_car_controller.web.app import dash_app
+from psa_car_controller_fix.web.app import dash_app
 import dash_bootstrap_components as dbc
 from dash.dependencies import Output, Input, State
 
-from psa_car_controller.web.view import config_views
+from psa_car_controller_fix.web.view import config_views
 
 logger = logging.getLogger(__name__)
 

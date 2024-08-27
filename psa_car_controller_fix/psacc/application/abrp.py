@@ -5,7 +5,7 @@ from json.decoder import JSONDecodeError
 
 import requests
 
-from psa_car_controller.psacc.model.car import Car
+from psa_car_controller_fix.psacc.model.car import Car
 
 logger = logging.getLogger(__name__)
 TIMEOUT_IN_S = 10

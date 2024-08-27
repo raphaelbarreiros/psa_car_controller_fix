@@ -1,4 +1,4 @@
-from psa_car_controller.psa.constants import MQTT_BRANDCODE
+from psa_car_controller_fix.psa.constants import MQTT_BRANDCODE
 
 
 class AccountInformation:

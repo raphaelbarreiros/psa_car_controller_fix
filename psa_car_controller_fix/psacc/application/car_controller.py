@@ -11,12 +11,12 @@ from oauth2_client.credentials_manager import OAuthError
 
 from .charge_control import ChargeControls
 from .charging import Charging
-from psa_car_controller.psacc.repository.config_repository import ConfigRepository
-from psa_car_controller.psacc.repository.db import Database
-from psa_car_controller.psacc.utils.utils import Singleton
+from psa_car_controller_fix.psacc.repository.config_repository import ConfigRepository
+from psa_car_controller_fix.psacc.repository.db import Database
+from psa_car_controller_fix.psacc.utils.utils import Singleton
 from .psa_client import PSAClient
-from psa_car_controller.common.mylogger import my_logger
-from psa_car_controller.psa.otp.otp import CONFIG_NAME as OTP_CONFIG_NAME, ConfigException
+from psa_car_controller_fix.common.mylogger import my_logger
+from psa_car_controller_fix.psa.otp.otp import CONFIG_NAME as OTP_CONFIG_NAME, ConfigException
 from psa_car_controller import __version__
 
 DEFAULT_NAME = "config.json"
@@ -39,7 +39,7 @@ def parse_args():
     parser.add_argument("--offline", help="offline limited mode", action='store_true')
     parser.add_argument("--web-conf", help="ignore if config files not existing yet", action='store_true')
     parser.add_argument("-b", "--base-path", help="base path for web app", default="/")
-    parser.add_argument('--version', action='version', version='PSACC {}'.format(psa_car_controller.__version__))
+    parser.add_argument('--version', action='version', version='PSACC {}'.format(psa_car_controller_fix.__version__))
 
     return parser.parse_args()
 

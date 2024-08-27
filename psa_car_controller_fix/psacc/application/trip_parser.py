@@ -1,6 +1,6 @@
 import logging
 from collections.abc import Callable
-from psa_car_controller.psacc.model.car import Car
+from psa_car_controller_fix.psacc.model.car import Car
 
 LEVEL = 5
 

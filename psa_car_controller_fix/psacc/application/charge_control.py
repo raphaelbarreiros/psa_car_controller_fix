@@ -8,8 +8,8 @@ from time import sleep
 
 import pytz
 
-from psa_car_controller.psa.constants import DISCONNECTED, INPROGRESS, FINISHED, STOPPED
-from psa_car_controller.common.utils import RateLimitException
+from psa_car_controller_fix.psa.constants import DISCONNECTED, INPROGRESS, FINISHED, STOPPED
+from psa_car_controller_fix.common.utils import RateLimitException
 from .psa_client import PSAClient
 
 logger = logging.getLogger(__name__)

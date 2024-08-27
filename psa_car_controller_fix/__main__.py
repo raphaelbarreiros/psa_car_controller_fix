@@ -8,9 +8,9 @@ if sys.version_info < (3, 7):
     raise RuntimeError("This application requires Python 3.7+")
 
 # pylint: disable=wrong-import-position
-from psa_car_controller.psacc.application.car_controller import PSACarController
+from psa_car_controller_fix.psacc.application.car_controller import PSACarController
 from psa_car_controller import web
-from psa_car_controller.common.mylogger import logger
+from psa_car_controller_fix.common.mylogger import logger
 
 
 # noqa: MC0001

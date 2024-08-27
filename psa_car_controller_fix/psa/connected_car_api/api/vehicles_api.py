@@ -18,7 +18,7 @@ import re  # noqa: F401
 # python 2 and python 3 compatibility library
 import six
 
-from psa_car_controller.psa.connected_car_api.api_client import ApiClient
+from psa_car_controller_fix.psa.connected_car_api.api_client import ApiClient
 
 
 class VehiclesApi(object):

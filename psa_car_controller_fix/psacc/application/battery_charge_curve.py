@@ -2,10 +2,10 @@ from statistics import mean
 
 from typing import List
 
-from psa_car_controller.psacc.model.battery_curve import BatteryCurveDto
-from psa_car_controller.psacc.model.car import Car
-from psa_car_controller.psacc.model.charge import Charge
-from psa_car_controller.psacc.repository.db import Database
+from psa_car_controller_fix.psacc.model.battery_curve import BatteryCurveDto
+from psa_car_controller_fix.psacc.model.car import Car
+from psa_car_controller_fix.psacc.model.charge import Charge
+from psa_car_controller_fix.psacc.repository.db import Database
 
 DEFAULT_KM_BY_KW = 5.3
 MINIMUM_AUTONOMY_FOR_GOOD_RESULT = 20

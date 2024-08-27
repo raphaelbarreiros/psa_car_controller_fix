@@ -23,9 +23,9 @@ import tempfile
 import six
 from six.moves.urllib.parse import quote
 
-from psa_car_controller.psa.connected_car_api import models
-from psa_car_controller.psa.connected_car_api.configuration import Configuration
-from psa_car_controller.psa.connected_car_api import rest
+from psa_car_controller_fix.psa.connected_car_api import models
+from psa_car_controller_fix.psa.connected_car_api.configuration import Configuration
+from psa_car_controller_fix.psa.connected_car_api import rest
 
 
 class ApiClient(object):

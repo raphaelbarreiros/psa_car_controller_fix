@@ -5,11 +5,11 @@ from dash import callback_context, html, dcc
 from dash.exceptions import PreventUpdate
 from flask import request
 
-from psa_car_controller.psa.otp.otp import new_otp_session
-from psa_car_controller.psacc.application.car_controller import PSACarController
-from psa_car_controller.psa.setup.app_decoder import InitialSetup
-from psa_car_controller.common.mylogger import LOG_FILE
-from psa_car_controller.web.app import dash_app
+from psa_car_controller_fix.psa.otp.otp import new_otp_session
+from psa_car_controller_fix.psacc.application.car_controller import PSACarController
+from psa_car_controller_fix.psa.setup.app_decoder import InitialSetup
+from psa_car_controller_fix.common.mylogger import LOG_FILE
+from psa_car_controller_fix.web.app import dash_app
 import dash_bootstrap_components as dbc
 from dash.dependencies import Output, Input, State
 

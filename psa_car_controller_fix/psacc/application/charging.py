@@ -7,8 +7,8 @@ from typing import List
 from .battery_charge_curve import BatteryChargeCurve
 from .ecomix import Ecomix
 
-from psa_car_controller.psacc.repository.config_repository import ElectricityPriceConfig
-from psa_car_controller.psacc.repository.db import Database
+from psa_car_controller_fix.psacc.repository.config_repository import ElectricityPriceConfig
+from psa_car_controller_fix.psacc.repository.db import Database
 from ..model.car import Car, Cars
 from ..model.charge import Charge
 

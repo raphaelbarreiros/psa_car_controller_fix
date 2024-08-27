@@ -3,8 +3,8 @@ import dash_daq as daq
 from dash import html
 from dash.dependencies import Input
 
-from psa_car_controller.web.app import dash_app
-from psa_car_controller.web.tools.Button import Button
+from psa_car_controller_fix.web.app import dash_app
+from psa_car_controller_fix.web.tools.Button import Button
 
 
 class Switch(Button):

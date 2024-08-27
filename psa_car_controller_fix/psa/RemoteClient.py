@@ -8,15 +8,15 @@ import time
 import paho.mqtt.client as mqtt
 from requests import RequestException
 
-from psa_car_controller.psacc.model.car import Cars
-from psa_car_controller.psa.AccountInformation import AccountInformation
-from psa_car_controller.psa.RemoteCredentials import RemoteCredentials
-from psa_car_controller.psa.constants import INPROGRESS, DEFAULT_PRECONDITIONING_PROGRAM, IMMEDIATE_CHARGE, \
+from psa_car_controller_fix.psacc.model.car import Cars
+from psa_car_controller_fix.psa.AccountInformation import AccountInformation
+from psa_car_controller_fix.psa.RemoteCredentials import RemoteCredentials
+from psa_car_controller_fix.psa.constants import INPROGRESS, DEFAULT_PRECONDITIONING_PROGRAM, IMMEDIATE_CHARGE, \
     DELAYED_CHARGE, REMOTE_URL
-from psa_car_controller.psa.mqtt_request import MQTTRequest
-from psa_car_controller.psa.oauth import OpenIdCredentialManager
-from psa_car_controller.common.utils import RateLimitException, rate_limit, parse_hour
-from psa_car_controller.psa.otp.otp import ConfigException, save_otp, load_otp
+from psa_car_controller_fix.psa.mqtt_request import MQTTRequest
+from psa_car_controller_fix.psa.oauth import OpenIdCredentialManager
+from psa_car_controller_fix.common.utils import RateLimitException, rate_limit, parse_hour
+from psa_car_controller_fix.psa.otp.otp import ConfigException, save_otp, load_otp
 
 logger = logging.getLogger(__name__)
 

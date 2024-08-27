@@ -4,11 +4,11 @@ from collections import OrderedDict
 import dash_bootstrap_components as dbc
 from dash import html
 
-from psa_car_controller.psacc.application.psa_client import PSAClient
-from psa_car_controller.psacc.repository.db import Database
-from psa_car_controller.web.tools.Button import Button
-from psa_car_controller.web.tools.Switch import Switch
-from psa_car_controller.web.tools.utils import card_value_div, create_card
+from psa_car_controller_fix.psacc.application.psa_client import PSAClient
+from psa_car_controller_fix.psacc.repository.db import Database
+from psa_car_controller_fix.web.tools.Button import Button
+from psa_car_controller_fix.web.tools.Switch import Switch
+from psa_car_controller_fix.web.tools.utils import card_value_div, create_card
 
 logger = logging.getLogger(__name__)
 

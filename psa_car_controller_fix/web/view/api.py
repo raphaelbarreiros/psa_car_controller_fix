@@ -3,19 +3,19 @@ import logging
 from flask import jsonify, request, Response as FlaskResponse
 from pydantic import BaseModel
 
-from psa_car_controller.common.utils import RateLimitException
-from psa_car_controller.psacc.application.car_controller import PSACarController
-from psa_car_controller.psacc.repository.db import Database
-from psa_car_controller.web.app import app
+from psa_car_controller_fix.common.utils import RateLimitException
+from psa_car_controller_fix.psacc.application.car_controller import PSACarController
+from psa_car_controller_fix.psacc.repository.db import Database
+from psa_car_controller_fix.web.app import app
 
-from psa_car_controller.psacc.model.car import Cars
-from psa_car_controller.psacc.repository.trips import Trips
+from psa_car_controller_fix.psacc.model.car import Cars
+from psa_car_controller_fix.psacc.repository.trips import Trips
 
-from psa_car_controller.psacc.application.charging import Charging
+from psa_car_controller_fix.psacc.application.charging import Charging
 
 import json
 
-from psa_car_controller.web.tools.utils import convert_to_number_if_number_else_return_str
+from psa_car_controller_fix.web.tools.utils import convert_to_number_if_number_else_return_str
 
 logger = logging.getLogger(__name__)
 

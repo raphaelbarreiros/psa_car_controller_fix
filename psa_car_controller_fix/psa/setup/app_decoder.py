@@ -5,12 +5,12 @@ import traceback
 
 import requests
 
-from psa_car_controller.psa.constants import BRAND
-from psa_car_controller.psa.setup.apk_parser import ApkParser
-from psa_car_controller.psa.setup.github import urlretrieve_from_github
-from psa_car_controller.psacc.application.car_controller import PSACarController
-from psa_car_controller.psacc.application.psa_client import PSAClient
-from psa_car_controller.psacc.application.charge_control import ChargeControl, ChargeControls
+from psa_car_controller_fix.psa.constants import BRAND
+from psa_car_controller_fix.psa.setup.apk_parser import ApkParser
+from psa_car_controller_fix.psa.setup.github import urlretrieve_from_github
+from psa_car_controller_fix.psacc.application.car_controller import PSACarController
+from psa_car_controller_fix.psacc.application.psa_client import PSAClient
+from psa_car_controller_fix.psacc.application.charge_control import ChargeControl, ChargeControls
 
 logger = logging.getLogger(__name__)
 

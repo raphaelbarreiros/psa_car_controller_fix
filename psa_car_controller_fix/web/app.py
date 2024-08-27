@@ -7,14 +7,14 @@ from flask import Flask
 from werkzeug import run_simple
 from werkzeug.middleware.proxy_fix import ProxyFix
 
-from psa_car_controller.web.dash_custom import DashCustom
+from psa_car_controller_fix.web.dash_custom import DashCustom
 
 try:
     from werkzeug.middleware.dispatcher import DispatcherMiddleware
 except ImportError:
     from werkzeug import DispatcherMiddleware
 
-from psa_car_controller.common.mylogger import file_handler
+from psa_car_controller_fix.common.mylogger import file_handler
 if sys.version_info >= (3, 8):
     import importlib
 else:
@@ -52,7 +52,7 @@ def start_app(*args, **kwargs):
 
 
 def config_flask(title, base_path, debug: bool, host, port, reloader=False,  # pylint: disable=too-many-arguments
-                 unminified=False, view="psa_car_controller.web.view.views"):
+                 unminified=False, view="psa_car_controller_fix.web.view.views"):
     global app, dash_app
     reload_view = app is not None
     app = Flask(__name__)

@@ -8,20 +8,20 @@ from sqlite3.dbapi2 import IntegrityError
 from oauth2_client.credentials_manager import ServiceInformation
 from urllib3.exceptions import InvalidHeader
 
-from psa_car_controller.psa.connected_car_api.api.vehicles_api import VehiclesApi
-from psa_car_controller.psa.connected_car_api.rest import ApiException
-from psa_car_controller.psacc.model.car import Cars, Car
-from psa_car_controller.psacc.application.charging import Charging
-from psa_car_controller.psa.AccountInformation import AccountInformation
-from psa_car_controller.psa.RemoteClient import RemoteClient
-from psa_car_controller.psa.RemoteCredentials import RemoteCredentials
-from psa_car_controller.psa.oauth import OpenIdCredentialManager, Oauth2PSACCApiConfig, OauthAPIClient
+from psa_car_controller_fix.psa.connected_car_api.api.vehicles_api import VehiclesApi
+from psa_car_controller_fix.psa.connected_car_api.rest import ApiException
+from psa_car_controller_fix.psacc.model.car import Cars, Car
+from psa_car_controller_fix.psacc.application.charging import Charging
+from psa_car_controller_fix.psa.AccountInformation import AccountInformation
+from psa_car_controller_fix.psa.RemoteClient import RemoteClient
+from psa_car_controller_fix.psa.RemoteCredentials import RemoteCredentials
+from psa_car_controller_fix.psa.oauth import OpenIdCredentialManager, Oauth2PSACCApiConfig, OauthAPIClient
 from .ecomix import Ecomix
-from psa_car_controller.psa.constants import realm_info, AUTHORIZE_SERVICE
+from psa_car_controller_fix.psa.constants import realm_info, AUTHORIZE_SERVICE
 
 from .abrp import Abrp
-from psa_car_controller.psacc.repository.db import Database
-from psa_car_controller.common.mylogger import CustomLogger
+from psa_car_controller_fix.psacc.repository.db import Database
+from psa_car_controller_fix.common.mylogger import CustomLogger
 
 SCOPE = ['openid profile']
 CARS_FILE = "cars.json"

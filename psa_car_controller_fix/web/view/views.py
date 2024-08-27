@@ -9,28 +9,28 @@ from dash.exceptions import PreventUpdate
 import time
 from flask import request
 
-from psa_car_controller.common.mylogger import CustomLogger
-from psa_car_controller.psacc.application.car_controller import PSACarController
-from psa_car_controller.psacc.model.car import Cars, Car
-from psa_car_controller.psacc.model.charge import Charge
+from psa_car_controller_fix.common.mylogger import CustomLogger
+from psa_car_controller_fix.psacc.application.car_controller import PSACarController
+from psa_car_controller_fix.psacc.model.car import Cars, Car
+from psa_car_controller_fix.psacc.model.charge import Charge
 
-from psa_car_controller.psacc.repository.trips import Trips
+from psa_car_controller_fix.psacc.repository.trips import Trips
 
-from psa_car_controller.psacc.application.charging import Charging
-from psa_car_controller.web import figures
+from psa_car_controller_fix.psacc.application.charging import Charging
+from psa_car_controller_fix.web import figures
 
-from psa_car_controller.web.app import dash_app
-from psa_car_controller.psacc.repository.db import Database
-from psa_car_controller.web.tools.utils import diff_dashtable, unix_time_millis, get_marks_from_start_end, create_card
-from psa_car_controller.web.view.config_oauth import get_oauth_config_layout
-from psa_car_controller.web.view.config_views import log_layout, config_layout
+from psa_car_controller_fix.web.app import dash_app
+from psa_car_controller_fix.psacc.repository.db import Database
+from psa_car_controller_fix.web.tools.utils import diff_dashtable, unix_time_millis, get_marks_from_start_end, create_card
+from psa_car_controller_fix.web.view.config_oauth import get_oauth_config_layout
+from psa_car_controller_fix.web.view.config_views import log_layout, config_layout
 
 # pylint: disable=invalid-name
-from psa_car_controller.web.tools.figurefilter import FigureFilter
-from psa_car_controller.web.view.control import get_control_tabs
+from psa_car_controller_fix.web.tools.figurefilter import FigureFilter
+from psa_car_controller_fix.web.view.control import get_control_tabs
 
 from psa_car_controller import __version__
-from psa_car_controller.web.view import api  # pylint: disable=unused-import
+from psa_car_controller_fix.web.view import api  # pylint: disable=unused-import
 
 logger = CustomLogger.getLogger(__name__)
 

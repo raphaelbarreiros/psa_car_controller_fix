@@ -10,10 +10,10 @@ from typing import Optional
 from oauth2_client.credentials_manager import CredentialManager, ServiceInformation
 from requests import Response, RequestException
 
-from psa_car_controller.common.utils import rate_limit
-from psa_car_controller.psa import connected_car_api
-from psa_car_controller.psa.connected_car_api import ApiClient
-from psa_car_controller.psa.connected_car_api.rest import ApiException
+from psa_car_controller_fix.common.utils import rate_limit
+from psa_car_controller_fix.psa import connected_car_api
+from psa_car_controller_fix.psa.connected_car_api import ApiClient
+from psa_car_controller_fix.psa.connected_car_api.rest import ApiException
 
 logger = logging.getLogger(__name__)
 

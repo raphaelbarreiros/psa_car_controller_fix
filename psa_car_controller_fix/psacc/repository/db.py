@@ -11,11 +11,11 @@ import requests
 from geojson import Feature, Point, FeatureCollection
 from geojson import dumps as geo_dumps
 
-from psa_car_controller.common import utils
-from psa_car_controller.psacc.model.battery_curve import BatteryCurveDto
-from psa_car_controller.psacc.model.battery_soh import BatterySoh
-from psa_car_controller.psacc.model.charge import Charge
-from psa_car_controller.psacc.utils.utils import get_temp
+from psa_car_controller_fix.common import utils
+from psa_car_controller_fix.psacc.model.battery_curve import BatteryCurveDto
+from psa_car_controller_fix.psacc.model.battery_soh import BatterySoh
+from psa_car_controller_fix.psacc.model.charge import Charge
+from psa_car_controller_fix.psacc.utils.utils import get_temp
 
 logger = logging.getLogger(__name__)
 

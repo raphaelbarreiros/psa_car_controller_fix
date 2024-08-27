@@ -7,8 +7,8 @@ from configupdater import ConfigUpdater
 from pydantic import BaseModel
 from typing import List
 
-from psa_car_controller.psacc.application.battery_charge_curve import BatteryChargeCurve
-from psa_car_controller.psacc.model.charge import Charge
+from psa_car_controller_fix.psacc.application.battery_charge_curve import BatteryChargeCurve
+from psa_car_controller_fix.psacc.model.charge import Charge
 
 logger = logging.getLogger(__name__)
 
