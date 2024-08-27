@@ -13,17 +13,17 @@
  ```
     
 - For everyone :
-      ```pip3 install psa-car-controller```
+      ```pip3 install psa-car-controller-fix```
   
             
 1.3 start the app:
         
 Start the app with charge control enabled :
 
-``psa-car-controller --web-conf``
+``psa-car-controller-fix --web-conf``
 
 At the first launch you will be asked to connect and give a code that you will receive by SMS and also give your pin code (the four-digit code that your use on the android app).
 If it failed you can remove the file otp.bin and retry.
 
 You can see all options available with :
-``psa-car-controller -h``
+``psa-car-controller-fix -h``

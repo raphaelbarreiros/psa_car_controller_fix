@@ -39,7 +39,7 @@ Look at [API documentation](./docs/psacc_api.md)
 
 You can add the -r argument to record the position of the vehicle and retrieve this information in a dashboard.
 
-``python3 psa-car-controller -f config.json -c charge_config.json -r``
+``python3 psa-car-controller-fix -f config.json -c charge_config.json -r``
     
 You will be able to visualize your trips, your consumption and some statistics:
     

@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "psa-car-controller"
+name = "psa-car-controller-fix"
 version = "0.0.0"
 description = "This is a python program to control a psa car with connected_car v4 api."
 authors = ["Florian Bezannier <florian.bezannier@hotmail.fr>"]
@@ -58,7 +58,7 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-psa-car-controller = 'psa_car_controller_fix.__main__:main'
+psa-car-controller-fix = 'psa_car_controller_fix.__main__:main'
 
 [tool.autopep8]
 max_line_length = 120

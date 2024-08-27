@@ -43,7 +43,7 @@ sudo chown pi: -R .
 
 ### 5. I don't receive SMS
 The SMS authentication is used to be able to remote control your car.
- If your car doesn't have this functionality you should disable remote control when you start psa-car-controller 
+ If your car doesn't have this functionality you should disable remote control when you start psa-car-controller-fix 
 by using `--remote-disable` argument.
 
 ### 6. SSL error
