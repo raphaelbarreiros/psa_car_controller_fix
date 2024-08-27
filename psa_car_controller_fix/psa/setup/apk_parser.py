@@ -32,24 +32,23 @@ class ApkParser:
         return "res/raw-{}-r{}/parameters.json".format(language, country)
 
     def retrieve_content_from_apk(self):
-    a = APK(self.filename)
-    package_name = a.get_package()
-    resources = a.get_android_resources()
-    host_brandid_prod = resources.get_string(package_name, "HOST_BRANDID_PROD")
-    if host_brandid_prod is not None:
-        self.host_brandid_prod = host_brandid_prod[1]
-    else:
-        raise ValueError("HOST_BRANDID_PROD not found in APK resources")
-    self.culture = self.__get_cultures_code(a.get_file("res/raw/cultures.json"), self.country_code)
-    parameters = json.loads(a.get_file(self.__get_parameters_path()))
-    self.client_id = parameters["cvsClientId"]
-    self.client_secret = parameters["cvsSecret"]
+        a = APK(self.filename)
+        package_name = a.get_package()
+        resources = a.get_android_resources()
+        host_brandid_prod = resources.get_string(package_name, "HOST_BRANDID_PROD")
+        if host_brandid_prod is not None:
+            self.host_brandid_prod = host_brandid_prod[1]
+        else:
+            raise ValueError("HOST_BRANDID_PROD not found in APK resources")
+        self.culture = self.__get_cultures_code(a.get_file("res/raw/cultures.json"), self.country_code)
+        parameters = json.loads(a.get_file(self.__get_parameters_path()))
+        self.client_id = parameters["cvsClientId"]
+        self.client_secret = parameters["cvsSecret"]
 
-    # Get Customer id
-    self.site_code = BRAND[package_name]["brand_code"] + "_" + self.country_code + "_ESP"
-    pfx_cert = a.get_file("assets/MWPMYMA1.pfx")
-    save_key_to_pem(pfx_cert, b"y5Y2my5B")
-
+        # Get Customer id
+        self.site_code = BRAND[package_name]["brand_code"] + "_" + self.country_code + "_ESP"
+        pfx_cert = a.get_file("assets/MWPMYMA1.pfx")
+        save_key_to_pem(pfx_cert, b"y5Y2my5B")
 
 def save_key_to_pem(pfx_data, pfx_password):
     private_key, certificate = pkcs12.load_key_and_certificates(pfx_data,
