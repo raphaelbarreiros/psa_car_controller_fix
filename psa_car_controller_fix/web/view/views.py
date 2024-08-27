@@ -29,7 +29,7 @@ from psa_car_controller_fix.web.view.config_views import log_layout, config_layo
 from psa_car_controller_fix.web.tools.figurefilter import FigureFilter
 from psa_car_controller_fix.web.view.control import get_control_tabs
 
-from psa_car_controller import __version__
+from psa_car_controller_fix import __version__
 from psa_car_controller_fix.web.view import api  # pylint: disable=unused-import
 
 logger = CustomLogger.getLogger(__name__)

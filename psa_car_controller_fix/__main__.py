@@ -9,7 +9,7 @@ if sys.version_info < (3, 7):
 
 # pylint: disable=wrong-import-position
 from psa_car_controller_fix.psacc.application.car_controller import PSACarController
-from psa_car_controller import web
+from psa_car_controller_fix import web
 from psa_car_controller_fix.common.mylogger import logger
 
 

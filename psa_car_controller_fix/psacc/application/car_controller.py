@@ -17,7 +17,7 @@ from psa_car_controller_fix.psacc.utils.utils import Singleton
 from .psa_client import PSAClient
 from psa_car_controller_fix.common.mylogger import my_logger
 from psa_car_controller_fix.psa.otp.otp import CONFIG_NAME as OTP_CONFIG_NAME, ConfigException
-from psa_car_controller import __version__
+from psa_car_controller_fix import __version__
 
 DEFAULT_NAME = "config.json"
 
