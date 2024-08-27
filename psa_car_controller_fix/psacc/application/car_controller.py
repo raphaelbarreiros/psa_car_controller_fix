@@ -6,7 +6,7 @@ import sys
 import threading
 from os import path
 
-import psa_car_controller
+import psa_car_controller_fix
 from oauth2_client.credentials_manager import OAuthError
 
 from .charge_control import ChargeControls
