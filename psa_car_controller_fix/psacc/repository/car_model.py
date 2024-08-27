@@ -4,7 +4,9 @@ import os
 import ruamel.yaml
 from typing import List
 
-from psa_car_controller_fix.psacc.model.car_model import ElecModel, CarModel, DEFAULT_BATTERY_POWER, DEFAULT_FUEL_CAPACITY
+from psa_car_controller_fix.psacc.model.car_model import (
+    ElecModel, CarModel, DEFAULT_BATTERY_POWER, DEFAULT_FUEL_CAPACITY
+)
 from psa_car_controller_fix.psacc.utils.utils import Singleton
 
 MODELS_FILE = os.path.dirname(os.path.realpath(__file__)) + "/../resources/car_models.yml"
